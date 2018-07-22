@@ -1,0 +1,16 @@
+import React, { Component } from 'react'
+import { Provider, Consumer } from './Context.js'
+
+export default class App extends Component {
+  render() {
+    return (
+      <Provider>
+        <Consumer>
+          {data => (
+            <h1>Hello {data.name}!</h1>
+          )}
+        </Consumer>
+      </Provider>
+    )
+  }
+}

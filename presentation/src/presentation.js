@@ -1,37 +1,7 @@
-// Import React
 import React from 'react'
-/* eslint import/no-webpack-loader-syntax: off */
-// Import Spectacle Core tags
-import {
-  BlockQuote,
-  Cite,
-  Deck,
-  Heading,
-  ListItem,
-  List,
-  Quote,
-  Slide,
-  Text
-} from 'spectacle'
+import { Deck, Heading, Slide } from 'spectacle'
 import CodeSlide from 'spectacle-code-slide/src/CodeSlide'
-// Import theme
-import createTheme from 'spectacle/lib/themes/default'
-
-// Require CSS
-require('normalize.css')
-
-const theme = createTheme(
-  {
-    primary: 'white',
-    secondary: '#1F2022',
-    tertiary: '#03A9FC',
-    quartenary: '#CECECE'
-  },
-  {
-    primary: 'Montserrat',
-    secondary: 'Helvetica'
-  }
-)
+import theme from './theme'
 
 export default class Presentation extends React.Component {
   render() {
@@ -43,66 +13,39 @@ export default class Presentation extends React.Component {
         theme={theme}
       >
         <Slide bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Spectacle Boilerplate
+          <Heading size={1} fit lineHeight={1} textColor="secondary">
+            Context
           </Heading>
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-            open the presentation/index.js file to get started
-          </Text>
+          <Heading size={3} fit lineHeight={1} textColor="comment">
+            ReactJS Dublin{' '}
+            <span role="img" aria-label="Lightning">
+              ⚡️
+            </span>
+          </Heading>
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading fit textColor="secondary">
+            Context?
+          </Heading>
         </Slide>
         <CodeSlide
           lang="jsx"
-          textSize="0.8em"
+          // textSize="0.8em"
+          bgColor="primary"
           code={require('./codesamples/example1.js.sample')}
           ranges={[
-            { loc: [0, 21], title: 'Context' },
+            { loc: [0, 21], title: '🔥' },
             {
               loc: [0, 1],
-              note: 'Notice we import and additional function `createContext`'
+              note: 'Importing `createContext` along with the normal stuff'
             },
-            { loc: [5, 12], note: 'example code' }
+            {
+              loc: [2, 4],
+              note:
+                'Calling `createContext`, which returns a Consumer and Provider'
+            }
           ]}
         />
-        <Slide bgColor="tertiary">
-          <Heading size={6} textColor="primary" caps>
-            Typography
-          </Heading>
-          <Heading size={1} textColor="secondary">
-            Heading 1
-          </Heading>
-          <Heading size={2} textColor="secondary">
-            Heading 2
-          </Heading>
-          <Heading size={3} textColor="secondary">
-            Heading 3
-          </Heading>
-          <Heading size={4} textColor="secondary">
-            Heading 4
-          </Heading>
-          <Heading size={5} textColor="secondary">
-            Heading 5
-          </Heading>
-          <Text size={6} textColor="secondary">
-            Standard text
-          </Text>
-        </Slide>
-        <Slide bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>
-            Standard List
-          </Heading>
-          <List>
-            <ListItem>Item 1</ListItem>
-            <ListItem>Item 2</ListItem>
-            <ListItem>Item 3</ListItem>
-            <ListItem>Item 4</ListItem>
-          </List>
-        </Slide>
-        <Slide bgColor="secondary" textColor="primary">
-          <BlockQuote>
-            <Quote>Example Quote</Quote>
-            <Cite>Author</Cite>
-          </BlockQuote>
-        </Slide>
       </Deck>
     )
   }

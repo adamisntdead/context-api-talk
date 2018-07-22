@@ -5,7 +5,7 @@ const ctx = createContext()
 
 export default Provider extends Component {
   state = {
-    name: 'Dublin ReactJS Usergroup Lightning Talk Meetup Members'
+    name: 'ReactJS Dublin Members'
   }
 
   render() {

@@ -89,6 +89,7 @@
       "node"
     ]
   },
+  "homepage": "https://adamisntdead.github.io/context-api-talk/",
   "babel": {
     "presets": [
       "react-app"

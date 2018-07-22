@@ -1,0 +1,20 @@
+import React, { Component, createContext } from 'react'
+
+const ctx = createContext()
+// { Consumer, Provider } = ctx
+
+export default Provider extends Component {
+  state = {
+    name: 'Dublin ReactJS Usergroup Lightning Talk Meetup Members'
+  }
+
+  render() {
+    return (
+      <ctx.Provider value={this.state}>
+        {this.props.children}
+      </ctx.Provider>
+    )
+  }
+}
+
+export const Consumer = ctx.Consumer

@@ -4,7 +4,7 @@
   "description": "Slides for a lightning talk about React 16's Context API",
   "main": "index.js",
   "scripts": {
-    "deploy-presentation": "cd presentation && npm run clean && npm run build && surge -p ./build",
+    "deploy-presentation": "cd presentation && npm run clean && npm run build",
     "present": "cd presentation && npm start",
     "install": "cd presentation && yarn install"
   },

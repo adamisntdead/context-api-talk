@@ -190,14 +190,14 @@ export default class Presentation extends React.Component {
             <p>
               Context is designed for passing data down deeply nested
               components. If you only use redux to avoid prop drilling, you
-              probably didn't need redux. Redux also has things like middlewear,
+              probably didn't need redux. Redux also has things like middleware,
               great devtools, a large ecosystem, it provides features that
               context doesn't.
             </p>
             <p>
               Context is designed for passing data down deeply nested
               components. If you only use redux to avoid prop drilling, you
-              probably didn't need redux. Redux also has things like middlewear,
+              probably didn't need redux. Redux also has things like middleware,
               great devtools, a large ecosystem, it provides features that
               context doesn't.
             </p>

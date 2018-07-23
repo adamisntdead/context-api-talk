@@ -24,7 +24,7 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
         <Slide bgColor="primary">
-          <Heading textColor="secondary">What's Is It?</Heading>
+          <Heading textColor="secondary">What Is It?</Heading>
           <Notes>
             <p>
               Context is a way to provide data to the component tree, without

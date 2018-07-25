@@ -177,20 +177,28 @@ export default class Presentation extends React.Component {
           </Notes>
         </Slide>
         <Slide bgColor="primary">
-          <Heading textColor="secondary">That's React's Context API!</Heading>
+          <Heading textColor="secondary">That's The Context API!</Heading>
         </Slide>
         <Slide bgColor="primary">
           <Heading textColor="secondary">When Should I Use It?</Heading>
           <Notes>
-            <p>
-              Context is best used to share data that is global for a tree of
-              components. Things like themes, current user ect.
-            </p>
-            <p>
-              Also the demo here is very simple, and is actually somewhere where
-              you wouldn't use context. You should only use it when you need to
-              access down multiple levels.
-            </p>
+            <ul>
+              <li>
+                Best used to share data/state global for a tree of components
+              </li>
+              <li>
+                Things like themes, the current user, I am using it for forms
+              </li>
+              <li>
+                The demo here is very simple, and actually a great example of
+                where not to use it
+              </li>
+              <li>
+                You should only really use it when you need to give data down
+                multiple levels
+              </li>
+            </ul>
+
             <blockquote>
               Use context to share data that needs to be accessed down multiple
               levels.

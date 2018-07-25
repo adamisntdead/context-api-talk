@@ -26,10 +26,14 @@ export default class Presentation extends React.Component {
         <Slide bgColor="primary">
           <Heading textColor="secondary">What Is It?</Heading>
           <Notes>
-            <p>
-              Context is a way to provide data to the component tree, without
-              having to pass it down manually using props (prop drilling).
-            </p>
+            <ul>
+              <li>Provide data and state down then component tree</li>
+              <li>Don't have to manually do it through props</li>
+              <li>
+                Avoid <emph>Prop Drilling</emph>
+              </li>
+              <li>Available 16.3, pollyfillable from 16.0</li>
+            </ul>
             <blockquote>
               With context you can share values without explicitly using props.
             </blockquote>
@@ -116,6 +120,15 @@ export default class Presentation extends React.Component {
           <Heading textColor="secondary">
             How Do You Access The Provided Data?
           </Heading>
+          <Notes>
+            <ul>
+              <li>So how do you access this provided data</li>
+              <li>
+                Done (as you will see) with the 'function as a child' or render
+                props pattern
+              </li>
+            </ul>
+          </Notes>
         </Slide>
         <CodeSlide
           lang="jsx"

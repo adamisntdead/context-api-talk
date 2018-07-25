@@ -215,39 +215,30 @@ export default class Presentation extends React.Component {
               <li>
                 If you only use redux for this (avoiding prop drilling), it is a
                 replacement but you probably didn't need redux in that case
-                anyway
+                anyway.
+              </li>
+              <li>
+                Redux has things like middleware, great devtools, a large
+                ecosystem and other things that context doesn't
               </li>
             </ul>
-            <p>
-              Context is designed for passing data down deeply nested
-              components. If you only use redux to avoid prop drilling, you
-              probably didn't need redux. Redux also has things like middleware,
-              great devtools, a large ecosystem, it provides features that
-              context doesn't.
-            </p>
-            <p>
-              Context is designed for passing data down deeply nested
-              components. If you only use redux to avoid prop drilling, you
-              probably didn't need redux. Redux also has things like middleware,
-              great devtools, a large ecosystem, it provides features that
-              context doesn't.
-            </p>
+
             <ul>
-              <li>State persistance/hydration</li>
-              <li>Automated bug reports</li>
-              <li>Passing actions across things like websockets</li>
-              <li>Undo functionality</li>
-              <li>Alternate UIs</li>
+              <li>
+                If you are using redux for things like
+                <ul>
+                  <li>State persistance/hydration</li>
+                  <li>Automated bug reports</li>
+                  <li>Passing actions across things like websockets</li>
+                  <li>Undo functionality</li>
+                  <li>Alternate UIs</li>
+                </ul>
+              </li>
+              <li>
+                You should probably keep using redux. That being said, you don't
+                need to stop using a redux like pattern!
+              </li>
             </ul>
-            <p>
-              You should probably keep using redux. That being said, you don't
-              need to stop using a redux like pattern!
-            </p>
-            <p>
-              You can do things like actions and reducers and still use context!
-              Also, if you need a more lightweight way to do state management
-              thats a little bit higher level, have a look at unstated
-            </p>
             <blockquote>
               Context isn't a redux killer, it just replaces a small part of it
               (and what do you think redux uses internally!)

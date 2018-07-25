@@ -208,6 +208,16 @@ export default class Presentation extends React.Component {
         <Slide bgColor="primary">
           <Heading textColor="secondary">Goodbye Redux?</Heading>
           <Notes>
+            <ul>
+              <li>
+                Context is designed to pass data down deeply nested components
+              </li>
+              <li>
+                If you only use redux for this (avoiding prop drilling), it is a
+                replacement but you probably didn't need redux in that case
+                anyway
+              </li>
+            </ul>
             <p>
               Context is designed for passing data down deeply nested
               components. If you only use redux to avoid prop drilling, you
